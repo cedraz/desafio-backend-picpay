@@ -11,13 +11,13 @@ datasource db {
 }
 
 model User {
-  id          Int         @id @default(autoincrement()) 
+  id          Int         @id @default(autoincrement())
   name        String      
   document    String      @unique
   email       String      @unique
   password    String
   balance     Float       @default(0)
-  type        String      @default("CLIENT") 
+  type        String      @default("CLIENT")
 }
 
 model Transaction {

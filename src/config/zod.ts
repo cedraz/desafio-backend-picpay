@@ -25,16 +25,8 @@ const TransactionSchema = z.object({
 
 class Zod {
   validateUser(body: User) {
-    if (body.document.length === 11) {
-      if (!cpfValidator(body.document)) {
-        return { success: false, error: "Invalid CPF" };
-      }
-    }
-
-    if (body.document.length === 14) {
-      if (!cnpjValidator(body.document)) {
-        return { success: false, error: "Invalid CNPJ" };
-      }
+    if (!cpfValidator(body.document) && !cnpjValidator(body.document)) {
+      return { success: false, error: "Invalid CPF or CNPJ" };
     }
 
     return UserSchema.safeParse(body);
