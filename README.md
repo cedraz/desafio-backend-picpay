@@ -12,6 +12,8 @@ Este é o repositório da minha solução do desafio backend feito pela picpay, 
 - Zod
 - Axios
 
+---------------------------------
+
 ## Elysia with Bun runtime
 
 ### Getting Started
