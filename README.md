@@ -1,4 +1,4 @@
-# Desafio Backend Picpay
+# Desafio Back-end PicPay
 
 Este é o repositório da minha solução do desafio backend feito pela picpay, link do repositório do desafio: https://github.com/PicPay/picpay-desafio-backend
 
